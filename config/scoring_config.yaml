@@ -1,0 +1,137 @@
+# Scoring Configuration for AI GTM Engine
+
+# Weights for different signal types (must sum to 1.0)
+scoring_weights:
+  github_weight: 0.25          # GitHub activity (commits, issues, PRs)
+  community_weight: 0.20       # Reddit, Discord, Hacker News discussions
+  job_posting_weight: 0.20     # LinkedIn job postings
+  news_weight: 0.15           # News articles and product launches
+  technographic_weight: 0.10   # Tech stack analysis
+  firmographic_weight: 0.10    # Company size, industry, funding
+
+# Thresholds for intent classification
+thresholds:
+  high_intent_threshold: 0.7   # Score above this is high intent
+  medium_intent_threshold: 0.5 # Score above this is medium intent
+  low_intent_threshold: 0.3    # Score above this is low intent
+
+# Time windows (in days)
+time_windows:
+  recent_activity_window: 30   # How far back to look for activity
+  trigger_freshness_window: 7  # How recent triggers should be
+  signal_decay_days: 90        # How long signals remain relevant
+
+# Signal scoring parameters
+signal_scoring:
+  # Base confidence scores
+  github_commit_base: 0.4
+  github_issue_base: 0.6
+  github_pr_base: 0.5
+  reddit_post_base: 0.3
+  reddit_comment_base: 0.4
+  linkedin_job_base: 0.7
+  news_article_base: 0.5
+  
+  # Multipliers for different factors
+  company_mention_multiplier: 1.5
+  security_keyword_multiplier: 1.3
+  pain_point_multiplier: 1.2
+  recent_activity_multiplier: 1.1
+  
+  # Decay factors
+  daily_decay_rate: 0.01       # 1% decay per day
+  max_decay_days: 30           # Maximum days for decay
+
+# Industry-specific adjustments
+industry_adjustments:
+  technology: 1.0              # Base multiplier
+  healthcare: 1.2              # Higher security focus
+  finance: 1.3                 # Very high security focus
+  ecommerce: 0.9               # Moderate security focus
+  education: 0.8               # Lower security focus
+  manufacturing: 0.7           # Lower security focus
+
+# Company size adjustments
+size_adjustments:
+  startup_1_10: 0.8            # Very small companies
+  startup_11_50: 0.9           # Small companies
+  startup_51_200: 1.0          # Medium companies
+  startup_201_1000: 1.1        # Large companies
+  enterprise_1000_plus: 1.2    # Enterprise companies
+
+# Keywords and patterns
+keywords:
+  security_keywords:
+    - "authentication"
+    - "authorization"
+    - "auth"
+    - "login"
+    - "signin"
+    - "signup"
+    - "password"
+    - "oauth"
+    - "jwt"
+    - "token"
+    - "session"
+    - "security"
+    - "encryption"
+    - "2fa"
+    - "mfa"
+    - "two-factor"
+    - "multi-factor"
+    - "sso"
+    - "single-sign-on"
+    - "identity"
+    - "user management"
+    - "permissions"
+    - "roles"
+    - "rbac"
+    - "vulnerability"
+    - "breach"
+    - "hack"
+    - "security fix"
+    - "security patch"
+    - "cve"
+    - "xss"
+    - "csrf"
+    - "sql injection"
+    - "authentication bypass"
+
+  pain_point_indicators:
+    - "problem"
+    - "issue"
+    - "bug"
+    - "error"
+    - "failing"
+    - "broken"
+    - "help"
+    - "advice"
+    - "recommendation"
+    - "solution"
+    - "alternative"
+    - "struggling"
+    - "difficult"
+    - "complex"
+    - "complicated"
+    - "frustrated"
+    - "annoying"
+    - "pain"
+    - "headache"
+    - "nightmare"
+    - "terrible"
+
+# File patterns for GitHub analysis
+github_patterns:
+  security_files:
+    - "auth"
+    - "login"
+    - "security"
+    - "middleware"
+    - "guard"
+    - "permission"
+    - "user"
+    - "session"
+    - "token"
+    - "jwt"
+    - "oauth"
+    - "sso"

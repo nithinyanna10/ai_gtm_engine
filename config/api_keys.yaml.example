@@ -1,0 +1,41 @@
+# API Keys Configuration
+# Copy this file to api_keys.yaml and add your actual API keys
+
+# OpenAI
+openai_api_key: "your_openai_api_key_here"
+openai_model: "gpt-4"
+
+# Anthropic
+anthropic_api_key: "your_anthropic_api_key_here"
+anthropic_model: "claude-3-sonnet-20240229"
+
+# GitHub
+github_token: "your_github_personal_access_token_here"
+
+# Reddit
+reddit_client_id: "your_reddit_client_id_here"
+reddit_client_secret: "your_reddit_client_secret_here"
+reddit_user_agent: "AI_GTM_Engine/1.0"
+
+# LinkedIn (for PhantomBuster or similar)
+linkedin_username: "your_linkedin_username"
+linkedin_password: "your_linkedin_password"
+
+# SendGrid
+sendgrid_api_key: "your_sendgrid_api_key_here"
+
+# Twilio
+twilio_account_sid: "your_twilio_account_sid_here"
+twilio_auth_token: "your_twilio_auth_token_here"
+
+# Synthesia
+synthesia_api_key: "your_synthesia_api_key_here"
+
+# Clearbit
+clearbit_api_key: "your_clearbit_api_key_here"
+
+# BuiltWith
+builtwith_api_key: "your_builtwith_api_key_here"
+
+# Slack (for notifications)
+slack_webhook_url: "your_slack_webhook_url_here"
