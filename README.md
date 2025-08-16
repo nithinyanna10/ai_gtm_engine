@@ -4,6 +4,13 @@
 
 An AI-powered engine that automatically discovers, scores, and generates personalized outreach for high-intent prospects using real-time data from GitHub, news APIs, and community discussions.
 
+## 📸 **Visual Showcase**
+
+![Dashboard Overview](images/image.png)
+*Real-time dashboard with live analytics, lead management, and AI-powered insights*
+
+**Live Demo**: http://localhost:8501 | **API**: http://localhost:8000
+
 ## 🎯 What It Does
 
 The AI GTM Engine transforms how you find and engage prospects by:
@@ -58,10 +65,18 @@ AI GTM Engine/
 │   ├── Event Registry API
 │   ├── Reddit API
 │   └── Tech Stack Analysis
-└── 🤖 AI Processing
-    ├── Intent Scoring
-    ├── Content Generation
-    └── Outreach Strategy
+├── 🤖 AI Processing
+│   ├── Intent Scoring
+│   ├── Content Generation
+│   └── Outreach Strategy
+├── 📸 Images/
+│   ├── Dashboard screenshots
+│   ├── Analytics views
+│   └── Feature demonstrations
+└── 📚 Documentation/
+    ├── README.md
+    ├── API docs
+    └── Setup guides
 ```
 
 ## 🚀 Quick Start
@@ -70,6 +85,9 @@ AI GTM Engine/
 - Python 3.13+
 - Git
 - API Keys (see Configuration section)
+
+![Signal Details](images/image%20(4).png)
+*Signal Details - Deep dive into data sources and insights*
 
 ### Installation
 
@@ -143,11 +161,17 @@ The engine is designed to work with free APIs:
 - **AI Analysis**: Company-specific insights and recommendations
 - **Real-time Signal Collection**: Live data from APIs
 
+![Dashboard Overview](images/image.png)
+*Dashboard Overview - Real-time analytics and lead management*
+
 ### 📡 **Signal Monitoring**
 - **Real-time Metrics**: Total signals, data sources, confidence scores
 - **Interactive Charts**: Signals by type and source
 - **Timeline Visualization**: Recent signal activity
 - **Performance Analytics**: Signal distribution and trends
+
+![Signal Monitoring](images/image%20(1).png)
+*Signal Monitoring - Interactive charts and real-time metrics*
 
 ### 📧 **Outreach Management**
 - **Priority Classification**: High/Medium/Low priority leads
@@ -155,11 +179,17 @@ The engine is designed to work with free APIs:
 - **Company Analysis**: Detailed insights for each prospect
 - **Signal-Based Recommendations**: Data-driven outreach suggestions
 
+![Outreach Management](images/image%20(2).png)
+*Outreach Management - Priority classification and AI strategies*
+
 ### 📈 **Analytics Dashboard**
 - **Key Performance Metrics**: Leads, signals, conversion rates
 - **Company Distribution**: Industry and intent score analysis
 - **Signal Analysis**: Source and confidence distribution
 - **Performance Trends**: Historical data and projections
+
+![Analytics Dashboard](images/image%20(3).png)
+*Analytics Dashboard - Performance metrics and trends*
 
 ## 🔍 How It Works
 
