@@ -327,14 +327,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Streamlit** for the beautiful dashboard
 - **FastAPI** for the robust API framework
 
-## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/nithinyanna10/ai_gtm_engine/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/nithinyanna10/ai_gtm_engine/discussions)
-- **Email**: support@aigtmengine.com
-
----
-
-**Built with ❤️ for smarter Go-To-Market automation**
-
-*Transform how you find and engage prospects with AI-powered intelligence*
